@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <aiml version="1.0">
+
+    <category>
+      <pattern>HI *</pattern>
+      <template>
+         <random>
+          <li>Hello, I am Holly.</li>
+          <li>Welcome!</li>
+          <li>Hi!</li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>what * skills</pattern>
+      <template>
+         Currently, I can give you restaurant recommendations. For example, type “Chinese restaurant” to show Chinese restaurants around you.
+      </template>
+    </category>
+
+    <category>
+      <pattern>what skills *</pattern>
+      <template>
+         Currently, I can give you restaurant recommendations. For example, type “Chinese restaurant” to show Chinese restaurants around you.
+      </template>
+    </category>
+
+    <category>
+      <pattern>skills *</pattern>
+      <template>
+         Currently, I can give you restaurant recommendations. For example, type “Chinese restaurant” to show Chinese restaurants around you.
+      </template>
+    </category>
+
+  </aiml>

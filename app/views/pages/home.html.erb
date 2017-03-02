@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Kate Zhang</title>
+    
+    <!-- Custom styles for this template -->
+    <%= stylesheet_link_tag "main" %>
+    <%= stylesheet_link_tag "font-awesome.min" %>
+	<%= stylesheet_link_tag "lato" %>
+	<%= stylesheet_link_tag "raleway" %>
+    
+	<%= javascript_include_tag "jquery.min.js" %>
+	<%= javascript_include_tag "smoothscroll.js" %>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+
+	<div id="section-topbar">
+		<div id="topbar-inner">
+			<div class="row">
+				<div class="dropdown">
+					<ul id="nav" class="nav">
+						<li class="menu-item"><a class="smoothScroll" href="#about" title="About">About</a></li>
+						<li class="menu-item"><a class="smoothScroll" href="#work" title="Works">Projects</a></li>
+						<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume">Resume</a></li>
+						<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact">Contact</a></li>
+					</ul><!--/ uL#nav -->
+				</div><!-- /.dropdown -->
+			<div class="clear"></div>
+		</div><!--/.row -->
+			
+
+			<div class="clear"></div>
+		</div><!--/ #topbar-inner -->
+	</div><!--/ #section-topbar -->
+	
+	<div id="headerwrap">
+		<div class="row centered">
+			<div class="col-lg-12">
+				<h1>Kate Zhang</h1>
+				<h3>Software Engineer | yrz.945@gmail.com</h3>
+			</div><!--/.col-lg-12 -->
+		</div><!--/.row -->
+	</div><!--/.#headerwrap -->
+	
+	<section id="about" name="about"></section>
+	<div id="intro">
+		<div class="row">
+			
+			<div class="col-lg-2 col-lg-offset-1">
+				<h5>ABOUT</h5>
+			</div>
+			<div class="col-lg-6">
+				<p>I'm a software engineer with experience in Node.js, Ruby on Rails, MySQL, and Javascript. I am passionate about using technologies to impact the physical world.</p>
+			</div>
+			<div class="col-lg-3">
+				<p><%= image_tag("icon_pdf.png") %> <sm><a href="https://dl.dropboxusercontent.com/s/j99zx7earqek7xx/Kate%20Zhang.pdf?dl=0">DOWNLOAD RESUME</a></sm></p>
+			</div>
+			
+		</div><!--/.row -->
+	</div><!--/ #intro -->
+
+	<section id="work" name="work"></section>
+	<!--PORTFOLIO DESCRIPTION -->
+	<div class="desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>PROJECTS</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Hollybot</t></p>
+					<p><more>Chatbot written in Ruby on Rails that can send emails and make restaurant recommendations based on user input.<br/><br/>
+					<sm>Click <a href="https://github.com/kzhang-repos/hollybot">here</a> to go to the Github repo.</sm></more> 
+
+					<!-- Trigger the modal with a button -->
+					<br>
+					<br>
+
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id='demo'>Demo</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="vertical-alignment-helper">
+							<div class="modal-dialog vertical-align-center">
+								<div class="modal-content">
+									<div class="modal-header">
+
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Hollybot</h4>
+											<br>
+											<p id="holly-response" class="holly-response"></p>
+
+									</div>
+									<div class="modal-body">
+										<div class="input-group">
+										<input id="query" type="text" class="form-control" placeholder="Say something to Holly...">
+										<span class="input-group-btn">
+											<button id="send" class="btn btn-default" type="button">Send</button>
+										</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+				</div>
+
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Chat App</t></p>
+					<p><more>Chat app written in Node.js and javascript that uses an authenticated socket.io connection to support one to one chat.<br/><br/>
+					<sm>Click <a href="https://github.com/kzhang-repos/chat">here</a> to go to the Github repo.</sm></more> 
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+		<br>
+	</div><!--/.container -->
+
+	<!--SKILLS DESCRIPTION -->
+	<div id="skillswrap">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>SKILLS</h5>
+				</div>
+				<div class="col-lg-2 centered">
+					<p>Node.js</p>
+					<br>
+				</div>
+				<div class="col-lg-2 centered">
+					<p>Ruby on Rails</p>
+					<br>
+				</div>
+				<div class="col-lg-2 centered">
+					<p>Javascript</p>
+					<br>
+				</div>
+				
+				<div class="col-lg-2 col-lg-offset-3 centered">
+					<p>MySQL</p>
+					<br>
+				</div>
+				<div class="col-lg-2 centered">
+					<p>Sequelize</p>
+					<br>
+				</div>
+				<div class="col-lg-2 centered">
+					<p>Socket.io</p>
+					<br>
+				</div>
+
+		</div><!--/.row -->
+		<br>
+	</div><!--/ #skillswrap -->
+
+	<section id="resume" name="resume"></section>
+	<!--EDUCATION DESCRIPTION -->
+	<div class="desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EDUCATION</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Self-study</t><br/>
+						<i>Algorithms;</i>
+						<i>Data structures;</i>
+						<i>Distributed system design;</i>
+						<i>Databases</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>AUGUST 2016 - PRESENT</sm><br/>
+					</p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>J.D.</t><br/>
+						University of California, Hastings College of the Law <br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>MAY 2013</sm></p>
+				</div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+					<p><t>B.B.A.</t><br/>
+						Shanghai University <br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JULY 2010</sm></p>
+				</div>
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+	
+	
+	<!--WORK DESCRIPTION -->
+	<div class="desc">
+		<div class="row">
+
+			<div class="col-lg-2 col-lg-offset-1">
+				<h5>WORK</h5>
+			</div>
+
+			<div class="col-lg-6">
+				<p><t>International Tax Attorney</t><br/>
+					Sharp Partners P.A. <br/>
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p><sm>JANUARY 2014 - JANUARY 2017</sm></p>
+			</div>
+	
+		</div><!--/.row -->
+		<br>
+		<br>
+		<%#<hr>%>
+	</div><!--/.container -->
+
+	<section id="contact" name="contact"></section>
+	<!--FOOTER DESCRIPTION -->
+	<div id="footwrap">
+		<div class="row">
+		
+			<div class="col-lg-2 col-lg-offset-1">
+				<h5>CONTACT</h5>
+			</div>
+			<div class="col-lg-6">
+				<p><t>Email</t><br/>
+					yrz.945@gmail.com <br/>
+				</p>
+				<p><t>Address</t><br/>
+					5410 Broadway <br/>
+					94618 <br/>
+					Oakland, CA <br/>
+				</p>
+				<p><t>Phone</t><br/>
+					(415) 260-2917 <br/>
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p><sm>SOCIAL LINK</sm></p>
+				<p>
+					<a href="https://www.linkedin.com/in/kate-zhang-70936055?trk=hp-identity-name"><%= image_tag("icon_linkedin.png") %></a>
+				</p>
+			</div>
+		</div><!--/.row -->
+	</div><!--/ #footer -->
+	
+	<div id="c">
+		<div class="container">
+			<p><sm>Created by Kate Zhang</sm></p>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%#<script src="assets/js/bootstrap.js"></script>%>
+  </body>
+</html>
